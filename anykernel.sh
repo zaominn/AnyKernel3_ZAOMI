@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=AnyKernel3 by KernelSU Developers | Build by cctv18
+kernel.string=AnyKernel3 by KernelSU Developers | Build by ZAOMI
 do.devicecheck=0
 do.modules=0
 do.systemless=0
@@ -31,7 +31,7 @@ NO_MAGISK_CHECK=1
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh
 
-ui_print "内核构建者: Coolapk@cctv18"
+ui_print "内核构建者: ZAOMI"
 
 # Resolving occasional file system I/O latency issues which may cause binary execution exceptions
 sync
