@@ -74,3 +74,16 @@ if [ -f "$AKHOME/kpn.zip" ]; then
 else
     ui_print "KP-N module Not Found, skipping KP-N module installation..."
 fi
+if [ -f "$AKHOME/rekernel.zip" ]; then
+    MODULE_PATH="$AKHOME/rekernel.zip"
+    KSUD_PATH="/data/adb/ksud"
+    if [ -f "$KSUD_PATH" ]; then
+        ui_print "Installing Re-Kernel Module..."
+        /data/adb/ksud module install "$MODULE_PATH"
+        ui_print "Installation Complete!"
+    else
+        ui_print "KSUD Not Found, skipping installation..."
+    fi
+else
+    ui_print "Re-Kernel module Not Found, skipping Re-Kernel module installation..."
+fi
